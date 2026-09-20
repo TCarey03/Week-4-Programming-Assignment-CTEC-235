@@ -13,72 +13,38 @@ class BradyBunchApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: Column(
+        body: GridView.count(
+          crossAxisCount: 3,
+          crossAxisSpacing: 4.0,
+          mainAxisSpacing: 4.0,
+          physics: const NeverScrollableScrollPhysics(),
           children: [
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/marcia.jpg',
-                    ),
-                  ),
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/carol.jpg',
-                    ),
-                  ),
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/greg.jpg',
-                    ),
-                  ),
-                ],
-              ),
+            BradyTile(
+              imagePath: 'assets/images/marcia.jpg',
             ),
-
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/jan.jpg',
-                    ),
-                  ),
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/alice.jpg',
-                    ),
-                  ),
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/peter.jpg',
-                    ),
-                  ),
-                ],
-              ),
+            BradyTile(
+              imagePath: 'assets/images/carol.jpg',
             ),
-
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/cindy.jpg',
-                    ),
-                  ),
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/mike.jpg',
-                    ),
-                  ),
-                  Expanded(
-                    child: BradyTile(
-                      imagePath: 'assets/images/bobby.jpg',
-                    ),
-                  ),
-                ],
-              ),
+            BradyTile(
+              imagePath: 'assets/images/greg.jpg',
+            ),
+            BradyTile(
+              imagePath: 'assets/images/jan.jpg',
+            ),
+            BradyTile(
+              imagePath: 'assets/images/alice.jpg',
+            ),
+            BradyTile(
+              imagePath: 'assets/images/peter.jpg',
+            ),
+            BradyTile(
+              imagePath: 'assets/images/cindy.jpg',
+            ),
+            BradyTile(
+              imagePath: 'assets/images/mike.jpg',
+            ),
+            BradyTile(
+              imagePath: 'assets/images/bobby.jpg',
             ),
           ],
         ),
