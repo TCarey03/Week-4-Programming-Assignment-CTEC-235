@@ -46,3 +46,22 @@ up." The Column gives constraints to the Rows, and each Row gives horizontal
 constraints to its children. The Expanded widgets make sure the available
 space is divided evenly instead of allowing the images to overflow the
 screen.
+
+-----------------------
+
+Phase 4
+
+For Phase 4, I replaced the nested Column and Row layout with GridView.count.
+I used crossAxisCount: 3 so Flutter creates three columns and automatically
+places the nine BradyTile widgets into a 3x3 grid.
+
+The Row and Column approach gave me more direct control over the individual
+rows and columns, but it required more code and several Expanded widgets.
+GridView.count is simpler because it is specifically designed for a 2D grid.
+
+One important difference is that Expanded should not be used directly inside
+the GridView because Expanded is designed to work with Row, Column, or Flex.
+GridView provides the constraints for each cell itself.
+
+I also used spacing between the grid cells so the black frames remain
+visually separated.
