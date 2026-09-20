@@ -29,3 +29,20 @@ screen and create an overflow.
 Expanded communicates the available constraints from the Row to each
 BradyTile. Since all three Expanded widgets have the same flex value, they
 each receive approximately one-third of the available width.
+
+----------------------
+
+Phase 3
+
+For Phase 3, I nested Rows inside a Column to create the 3x3 grid. I used
+Expanded around each Row so the three rows would divide the available
+vertical space evenly.
+
+I also used Expanded around each BradyTile inside the Rows. This divides the
+available horizontal space evenly between the three tiles.
+
+This demonstrates the Flutter layout rule "constraints go down, sizes go
+up." The Column gives constraints to the Rows, and each Row gives horizontal
+constraints to its children. The Expanded widgets make sure the available
+space is divided evenly instead of allowing the images to overflow the
+screen.
