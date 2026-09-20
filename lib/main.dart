@@ -13,8 +13,24 @@ class BradyBunchApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: BradyTile(
-          imagePath: 'assets/images/alice.jpg',
+        body: Row(
+          children: [
+            Expanded(
+              child: BradyTile(
+                imagePath: 'assets/images/greg.jpg',
+              ),
+            ),
+            Expanded(
+              child: BradyTile(
+                imagePath: 'assets/images/marcia.jpg',
+              ),
+            ),
+            Expanded(
+              child: BradyTile(
+                imagePath: 'assets/images/peter.jpg',
+              ),
+            ),
+          ],
         ),
       ),
     );
